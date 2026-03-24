@@ -1,0 +1,311 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "About Us"
+  },
+  "contact": {
+    "whatsapp": "Business WhatsApp",
+    "phone": "Phone"
+  },
+
+  "hero": {
+    "view_project": "Projects",
+    "our_services": "Our Services",
+    "scroll": "Scroll Down.Scroll Down.Scroll Down",
+    "projects": [
+      {
+        "title": "Vision",
+        "highlight": "Architectural Excellence",
+        "subtitle": "We create architectural solutions that combine design with modern innovation, delivering spaces that inspire and elevate everyday living.",
+        "location": "Global Presence"
+      },
+      {
+        "title": "Innovation",
+        "highlight": "Future Design",
+        "subtitle": "Our approach is based on advanced concepts that combine functionality and thoughtful aesthetics, to create environments ready for the demands of the future",
+        "location": "International Reach"
+      },
+      {
+        "title": "Identity",
+        "highlight": "Unique Expression",
+        "subtitle": "Every project reflects a distinct identity, carefully crafted to balance form, purpose, and experience while aligning with our clients’ vision and goals.",
+        "location": "Worldwide Projects"
+      }
+    ]
+  },
+  "about": {
+    "who_we_are": "Who We Are",
+    "title_main": "ABOUT",
+    "years_text": "Years of Excellence & Experience",
+    "description": "Since our company's establishment in Kuwait, we have been passionately committed to providing integrated real estate and engineering solutions that combine creativity and precision in execution. We develop our projects with a forward-looking vision that keeps pace with urban and technological advancements by offering innovative and effective solutions.",
+    "features": [
+      "Integrated Solutions",
+      "Effective Design",
+      "Project Supervision",
+      "Innovation Leaders"
+    ]
+  },
+  "services": {
+    "badge": "Our Expertise",
+    "title_part1": "Shaping the",
+    "title_part2": "Built Environment",
+    "description": "Delivering technical excellence and aesthetic precision across every square inch of development.",
+    "items": [
+      {
+        "id": "01",
+
+        "title": "Innovative Design",
+
+        "desc": "Creative and modern architectural solutions tailored to precisely meet your vision and needs."
+      },
+
+      {
+        "id": "02",
+
+        "title": "Urban Planning",
+
+        "desc": "Strategic development of robust community and functional spaces."
+      },
+
+      {
+        "id": "03",
+
+        "title": "Interior Design",
+
+        "desc": "Cohesive interior concepts that complement the structural architecture and enhance the human experience."
+      },
+
+      {
+        "id": "04",
+
+        "title": "Project Management",
+
+        "desc": "Comprehensive supervision that ensures accurate and timely project delivery."
+      },
+
+      {
+        "id": "05",
+
+        "title": "Real Estate Consulting",
+
+        "desc": "Expert advice on real estate development, market trends, and investment opportunities."
+      },
+
+      {
+        "id": "06",
+
+        "title": "Environmentally Friendly Solutions",
+
+        "desc": "Environmentally friendly engineering and design that reduces environmental impact and increases efficiency."
+      }
+    ]
+  },
+  "projects_section": {
+    "badge": "Our Portfolio",
+    "title_main": "Featured",
+    "title_highlight": "Projects",
+    "explore": "Explore Gallery",
+    "items": [
+      { "id": 1, "name": "Creative Space", "category": "Residential" },
+      { "id": 2, "name": "Modern Office", "category": "Commercial" },
+      { "id": 3, "name": "Luxury Villa", "category": "Residential" },
+      { "id": 4, "name": "Urban Loft", "category": "Interior" },
+      { "id": 5, "name": "Minimalist Studio", "category": "Interior" }
+    ]
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title_part1": "Let's Create",
+    "title_part2": "Something",
+    "title_part3": "Extraordinary.",
+    "description": "Transform your vision into architectural reality. Our integrated engineering and design solutions await your ambition.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "service_label": "Service Interest",
+      "vision": "Project Vision",
+      "button": "Begin Collaboration",
+      "services_list": [
+        "Architectural Design",
+        "Urban Planning",
+        "Interior Architecture",
+        "Structural Engineering",
+        "Real Estate Consulting"
+      ]
+    }
+  },
+  "location": {
+    "title": "Location",
+    "hq": " Headquarters",
+    "address": "Al Rawda, Nuri Pasha Street\nDamascus, Syria",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Sat – Thu: 10:00 AM – 5:00 PM"
+  },
+  "footer": {
+    "description": "We offer engineering and real estate solutions that focus on details and quality planning, to ensure that spaces are used practically and effectively.",
+    "rights": "© {{year}} Martini Solis. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "company_values": {
+    "subtitle": "Our Values",
+    "title_main": "Corporate",
+    "title_bold": "Principles",
+    "description": "We are committed to delivering organized and clear work, while maintaining quality of execution and continuously improving performance.",
+    "items": {
+      "innovation": {
+        "title": "Innovation",
+        "details": "We embrace creativity and constructive thinking to deliver architectural solutions that challenge standards and inspire progress."
+      },
+      "quality": {
+        "title": "Quality",
+        "details": "We commit to excellence in every detail from design to execution, ensuring durability and aesthetic value."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "details": "We believe in the power of teamwork, and we foster strong partnerships to achieve shared success."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "details": "Transparency, honesty, and accountability are the principles guiding every aspect of our work."
+      },
+      "growth": {
+        "title": "Growth",
+        "details": "We believe sustainability is achieved through continuous research and keeping pace with scientific advancements."
+      }
+    }
+  },
+  "about_page": {
+    "title_part1": "About",
+    "title_part2": "Of",
+    "mission": {
+      "title": "Our Mission",
+      "text": "We strive to provide architectural and real estate services that practically meet market demands, from design to implementation, with attention to quality, details, and teamwork, to ensure the delivery of reliable projects that add real value to clients."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "Our vision is to strengthen our presence in the engineering and real estate sector as a reliable entity, by delivering projects that are balanced in terms of quality and cost, while committing to practical results that meet customer needs and keep pace with market demands on an ongoing basis."
+    }
+  },
+  "services_page_header": {
+    "subtitle": "What We Offer",
+    "title_main": "Excellence",
+    "title_accent": "Engineering and Real Estate",
+    "description": "We offer a comprehensive range of architectural and engineering services, combining expertise and innovation."
+  },
+  "items": {
+   "design": {
+    "title": "Architectural Design",
+    "description": "We provide well-considered architectural designs that address project needs while balancing aesthetics and functionality.",
+    "features": ["Concept Plans", "3D Modeling", "Material Selection"]
+  },
+  "urban": {
+    "title": "Urban Planning",
+    "description": "We develop urban plans that consider land use and community needs within a practical and implementable framework.",
+    "features": [
+      "Land Use Analysis",
+      "Infrastructure Design",
+      "Environmental Impact Study"
+    ]
+  },
+  "interior": {
+    "title": "Interior Design",
+    "description": "We offer interior design solutions focused on comfort and functionality, with cohesive coordination that aligns with the project’s identity.",
+    "features": ["Furniture Layout", "Lighting Design", "Custom Woodwork"]
+  },
+  "project": {
+    "title": "Project Management",
+    "description": "We oversee projects from start to completion, managing time and cost while maintaining consistent quality.",
+    "features": ["Site Supervision", "Cost Monitoring", "Schedule Management"]
+  },
+  "consulting": {
+    "title": "Real Estate Consulting",
+    "description": "We provide market-based consulting to help clients make informed real estate decisions.",
+    "features": ["Market Analysis", "Feasibility Studies", "Return Assessment"]
+  },
+  "sustainability": {
+    "title": "Sustainability Solutions",
+    "description": "We consider energy efficiency and appropriate material selection to improve project performance in a practical way.",
+    "features": ["Material Selection", "Energy Efficiency Optimization", "Solar Solutions Study"]
+  }
+  },
+  "methodology": {
+    "title": "How We",
+    "accent": "Execute",
+    "steps": [
+      {
+        "t": "Concept & Strategy",
+        "d": "Deep dive into client goals and site potential."
+      },
+      {
+        "t": "Design Development",
+        "d": "Refining aesthetics with technical precision."
+      },
+      {
+        "t": "Quality Construction",
+        "d": "Executing with master craftsmanship and care."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Start",
+    "accent": "",
+    "button": "Contact Our Team",
+    "name": "MARTINI SOLIS"
+  },
+  "hero_project": {
+    "established": "Established 2025",
+    "title_main": "Architecture",
+    "title_accent": "Redefined.",
+    "description": "We offer designs for spaces that combine simplicity and quality, with a focus on functionality and execution details.",
+    "scroll": "Scroll to explore"
+  },
+  "categories": {
+    "all": "All",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "interior": "Interior"
+  },
+
+  "project": {
+    "concept": "The Concept",
+    "client": "Client",
+    "location": "Location",
+    "area": "Area",
+    "year": "Year"
+  },
+  "common": {
+    "back_to_projects": "Back to Projects"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "Martini Studio",
+      "category": "commercial",
+      "location": "Dubai, UAE",
+      "year": "2025",
+      "area": "45,000 sqm",
+      "client": "Emaar Properties",
+      "description": "A monolith of modern engineering, The Obsidian Tower redefines the skyline with its sustainable black glass facade and geometrically pure lines.",
+      "heroVideo": "/images/ved.mp4",
+      "featuredImage": "/images/studio/27.png",
+      "image": "/images/studio/1.png",
+      "images": [
+        "/images/studio/1.png",
+        "/images/studio/2.png",
+        "/images/studio/3.png"
+      ],
+      "details": [
+        {
+          "title": "Sustainable Facade Design",
+          "text": "The exterior utilizes a custom-engineered dual-skin facade. The outer layer acts as a thermal shield.",
+          "image": "https://images.unsplash.com/photo-1555636222-cae831e670b3",
+          "align": "left"
+        }
+      ]
+    }
+  ]
+}

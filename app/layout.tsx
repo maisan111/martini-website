@@ -9,13 +9,13 @@ export const metadata = {
 
 
 const CaviarDreams = localFont({
-  src: '/fonts/CaviarDreams.ttf', 
+  src: './fonts/CaviarDreams.ttf', 
   variable: '--font-CaviarDreams', 
 });
 
 
 const computerist = localFont({
-  src: '/fonts/Computerist.ttf', 
+  src: './fonts/Computerist.ttf', 
   variable: '--font-computerist', 
 });
 
@@ -23,24 +23,24 @@ const computerist = localFont({
 
 
 const Sanseriffic = localFont({
-  src: '/fonts/Sanseriffic.otf', 
+  src: './fonts/Sanseriffic.otf', 
   variable: '--font-Sanseriffic', 
 });
 
 //arabic font
 const OMAR = localFont({
-  src: '/fonts/arabic/OMAR.ttf', 
+  src: './fonts/arabic/OMAR.ttf', 
   variable: '--font-OMAR', 
 });
 
 const mylotusB = localFont({
-  src: '/fonts/arabic/MyLotusB.ttf', 
+  src: './fonts/arabic/MyLotusB.ttf', 
   variable: '--font-MyLotusB', 
 });
 
 
 const Alharoni= localFont({
-  src: '/fonts/arabic/Alharoni.ttf', 
+  src: './fonts/arabic/Alharoni.ttf', 
   variable: '--font-Alharoni', 
 });
 
@@ -51,22 +51,22 @@ const mohb = localFont({
 });
 
 const Camel = localFont({
-  src: '/fonts/arabic/Camel.otf', 
+  src: './fonts/arabic/Camel.otf', 
   variable: '--font-Camel', 
 });
 
 const CamelR = localFont({
-  src: '/fonts/arabic/CamelR.otf', 
+  src: './fonts/arabic/CamelR.otf', 
   variable: '--font-CamelR', 
 });
  
 const Lady = localFont({  
-  src: '/fonts/arabic/Lady.otf',
+  src: './fonts/arabic/Lady.otf',
   variable: '--font-Lady',
 });
 
 const Alhura = localFont({
-  src: '/fonts/arabic/Alhura.ttf',
+  src: './fonts/arabic/Alhura.ttf',
   variable: '--font-Alhura',
 });
 
@@ -74,7 +74,7 @@ const Alhura = localFont({
 
 
 const Oman = localFont({
-  src: '/fonts/arabic/Oman.ttf',
+  src: './fonts/arabic/Oman.ttf',
   variable: '--font-Oman',
 });
 

@@ -33,7 +33,7 @@ const OMAR = localFont({
   variable: '--font-OMAR', 
 });
 
-const mylotusB = localFont({
+const MyLotusB = localFont({
   src: './fonts/arabic/MyLotusB.ttf', 
   variable: '--font-MyLotusB', 
 });
@@ -46,7 +46,7 @@ const Alharoni= localFont({
 
 
 const mohb = localFont({
-  src: '/fonts/arabic/mohb.ttf', 
+  src: './fonts/arabic/mohb.ttf', 
   variable: '--font-mohb', 
 });
 
@@ -84,7 +84,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${computerist.variable}  ${CaviarDreams.variable} ${OMAR.variable} ${mylotusB.variable} ${Alharoni.variable} ${mohb.variable} ${Camel.variable} ${CamelR.variable} ${Lady.variable} ${Alhura.variable} ${Oman.variable} ${Sanseriffic.variable}`}>
+    <html lang="en" className={`${computerist.variable}  ${CaviarDreams.variable} ${OMAR.variable} ${MyLotusB.variable} ${Alharoni.variable} ${mohb.variable} ${Camel.variable} ${CamelR.variable} ${Lady.variable} ${Alhura.variable} ${Oman.variable} ${Sanseriffic.variable}`}>
      
    
       <body className="">{children}</body>

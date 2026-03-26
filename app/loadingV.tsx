@@ -62,11 +62,11 @@ export default function Loading({ onComplete }: { onComplete: () => void }) {
   }, [progressValue, smoothProgress, onComplete]);
 
   const panels = [
-    { src: "/images/t-8.jpg", delay: 0, origin: "bottom" },
-    { src: "/images/t-5.jpg", delay: 0.18, origin: "top" },
-    { src: "/images/t-1.jpg", delay: 0.36, origin: "bottom" },
-    { src: "/images/t-4.jpg", delay: 0.54, origin: "top" },
-  ];
+    { src: "/images/t-8.webp", delay: 0, origin: "bottom" },
+    { src: "/images/t-5.webp", delay: 0.18, origin: "top" },
+    { src: "/images/t-1.webp", delay: 0.36, origin: "bottom" },
+    { src: "/images/t-4.webp", delay: 0.54, origin: "top" },
+  ]; 
 
   return (
     <motion.div

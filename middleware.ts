@@ -1,3 +1,5 @@
+
+
 import { NextRequest, NextResponse } from "next/server";
 import i18nConfig from "./app/i18nConfig";
 
@@ -8,7 +10,7 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const { pathname } = url;
 
-  // Skip internal, API and static files
+  // 1. استثناء الملفات الثابتة والـ API
   if (
     pathname.startsWith("/api") ||
     pathname.startsWith("/_next") ||
@@ -23,10 +25,10 @@ export function middleware(request: NextRequest) {
   const segments = pathname.split("/").filter(Boolean);
   const pathnameLocale = segments[0]?.toLowerCase();
 
-  // If URL already contains a supported locale -> continue
+  // 2. إذا كان الرابط يحتوي على لغة مدعومة (مثلاً /ar أو /en)
   if (locales.includes(pathnameLocale)) {
     const res = NextResponse.next();
-    // Persist locale choice so navigation without locale stays in the same language
+    // حفظ الاختيار في الكوكيز لضمان بقاء المستخدم على نفس اللغة
     res.cookies.set("NEXT_LOCALE", pathnameLocale, {
       path: "/",
       maxAge: 60 * 60 * 24 * 365,
@@ -34,35 +36,32 @@ export function middleware(request: NextRequest) {
     return res;
   }
 
-  // Determine preferred locale: cookie -> Accept-Language -> default
+  // 3. تحديد اللغة المفضلة: الكوكيز أولاً، ثم اللغة الافتراضية مباشرة (تم حذف الـ Accept-Language)
   const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
   let locale = defaultLocale;
 
   if (cookieLocale && locales.includes(cookieLocale)) {
     locale = cookieLocale;
-  } else {
-    const acceptLang = request.headers.get("accept-language");
-    if (acceptLang) {
-      const accepted = acceptLang
-        .split(",")
-        .map((l) => l.split(";")[0].toLowerCase());
-      const found = accepted.find((a) => locales.includes(a.split("-")[0]));
-      if (found) locale = found.split("-")[0];
-    }
-  }
+  } 
+  // ملاحظة: حذفنا منطق الـ accept-language من هنا لمنع الجوال من فرض لغته
 
-  // If default should not be prefixed and we chose default, leave as-is
+  // 4. إعادة التوجيه إلى اللغة المختارة (الإنجليزية افتراضياً)
   if (locale === defaultLocale && !prefixDefault) {
-    return NextResponse.redirect(new URL(pathname, request.url));
+     // إذا كانت اللغة هي الإنجليزية وأنت لا تريد بادئة (prefix)، لا تفعل شيئاً
+     return NextResponse.next();
   }
 
-  // Redirect to locale-prefixed path
+  // تحويل الرابط ليصبح /en/path أو /ar/path
   url.pathname = `/${locale}${pathname}`;
   const res = NextResponse.redirect(url);
+  
+  // لا تقم بتعيين الكوكيز هنا إذا كنت تريد أن يكون التغيير "مؤقتاً" حتى يختار المستخدم يدوياً
+  // أو اتركها إذا كنت تريد تثبيت اللغة الإنجليزية كخيار أول للمتصفح
   res.cookies.set("NEXT_LOCALE", locale, {
     path: "/",
     maxAge: 60 * 60 * 24 * 365,
   });
+  
   return res;
 }
 

@@ -38,7 +38,7 @@ export default function ContactSection1() {
                         className="mb-12 md:mb-16 text-start"
                     >
                         <div className="flex items-center gap-4 mb-6 md:mb-8">
-                            <span className={`text-[10px] md:text-[14px] font-bold text-[#AF937A] uppercase ${isAr ? 'font-Camel tracking-normal' : 'font-Sanseriffic tracking-[0.4em]'}`}>
+                            <span className={`text-[10px] md:text-[14px] font-bold text-[#AF937A] uppercase ${isAr ? 'font-Camel' : 'font-Sanseriffic tracking-[0.4em]'}`}>
                                 {t('contact.badge')}
                             </span>
                         </div>

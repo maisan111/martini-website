@@ -16,7 +16,7 @@ const NAV_LINKS = [
   { key: "nav.services", href: "/service" },
 ];
 
-const LANGUAGES = ["EN", "AR", "TR"];
+const LANGUAGES = ["EN", "AR"];
 
 export default function Header() {
   const { t, i18n } = useTranslation("common");
@@ -140,7 +140,7 @@ export default function Header() {
       >
         <div
           className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-[0.07] z-10"
-          style={{ backgroundImage: "url('/images/header.jpg')" }}
+          style={{ backgroundImage: "url('/images/header.webp')" }}
         />
         <div className="relative p-8 lg:p-12 flex flex-col h-full z-[1000]">
           {/* Close Button */}
@@ -186,13 +186,13 @@ export default function Header() {
                   href="https://wa.me/963950505058"
                   className="text-gray-400 hover:text-[#C4A484] transition"
                 >
-                  <MessageCircle size={20} strokeWidth={1.5} />
+                  <MessageCircle size={30} strokeWidth={1.5} />
                 </a>
                 <a
                   href="tel:+963950505058"
                   className="text-gray-400 hover:text-[#C4A484] transition"
                 >
-                  <Phone size={20} strokeWidth={1.5} />
+                  <Phone size={30} strokeWidth={1.5} />
                 </a>
               </div>
             </div>
@@ -202,10 +202,10 @@ export default function Header() {
                 <button
                   key={lang}
                   onClick={() => changeLanguage(lang)}
-                  className={`text-sm tracking-widest font-Sanseriffic transition-colors ${
+                  className={`text-lg tracking-widest font-Sanseriffic transition-colors ${
                     currentLang === lang
-                      ? "text-[#C4A484] font-bold"
-                      : "text-gray-300 hover:text-gray-500"
+                      ? "text-[#C4A484] font-extrabold"
+                      : "text-gray-400 hover:text-gray-500"
                   }`}
                 >
                   {lang}

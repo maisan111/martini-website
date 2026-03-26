@@ -37,12 +37,12 @@ export default function LuxuryHero() {
   useEffect(() => setMounted(true), []);
   if (!mounted) return <div className="h-screen w-full bg-[#D4BCA3]" />;
 
-  const images = ["/images/t-4.jpg", "/images/t-5.jpg", "/images/t-1.jpg"];
+  const images = ["/images/t-4.webp", "/images/t-5.webp", "/images/t-1.webp"];
 
   const images_ar = [
-    "/images/t-4-a.jpg",
-    "/images/t-5-a.jpg",
-    "/images/t-1-a.jpg",
+    "/images/t-4-a.webp",
+    "/images/t-5-a.webp",
+    "/images/t-1-a.webp",
   ];
 
   return (
@@ -108,7 +108,7 @@ export default function LuxuryHero() {
                         }}
                         className={`
                           font-bold leading-tight text-white mb-2 
-                          ${isAr ? "text-[36px] sm:text-6xl  font-Camel" : "text-[36px] sm:text-6xl  tracking-[0.2em]  font-Sanseriffic"}
+                          ${isAr ? "text-[36px] sm:text-6xl  font-Camel" : "text-[36px] sm:text-6xl  tracking-[0.1em]  font-Sanseriffic"}
                         `}
                       >
                         {project.title}
@@ -126,7 +126,7 @@ export default function LuxuryHero() {
                         }}
                         className={`
                           block font-bold text-white 
-                          ${isAr ? "text-[35px] sm:text-5xl lg:text-6xl font-Camel" : "text-[35px] sm:text-5xl lg:text-[65px] tracking-[0.2em] font-Sanseriffic"}
+                          ${isAr ? "text-[35px] sm:text-5xl lg:text-6xl font-Camel" : "text-[35px] sm:text-5xl lg:text-[65px] tracking-[0.1em] font-Sanseriffic"}
                         `}
                       >
                         {project.highlight}
@@ -146,7 +146,7 @@ export default function LuxuryHero() {
                       </p>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       animate={
                         isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
@@ -160,7 +160,7 @@ export default function LuxuryHero() {
                       >
                         {t("hero.view_project", "GET STARTED")}
                       </Link>
-                    </motion.div>
+                    </motion.div> */}
                   </div>
                 </div>
               </SwiperSlide>
@@ -169,34 +169,42 @@ export default function LuxuryHero() {
       </Swiper>
 
       <div className="absolute bottom-3 left-0 right-0 z-40 flex justify-between items-end">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[144px] h-[134px] bg-white rounded-t-full flex items-end justify-center pb-4 z-50">
-          <div className="relative flex items-center justify-center w-[107px] h-[107px]">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[145px] h-[135px] bg-white rounded-t-full flex items-end justify-center pb-4 z-50">
+          <div className="relative flex items-center justify-center w-[108px] h-[108px]">
             {/* تم إضافة حركة الدوران هنا باستخدام motion */}
             <motion.svg
               key={i18n.language}
-              className="absolute w-full h-full"
+              className="absolute w-full h-full font-Audiowide"
               viewBox="0 0 100 100"
               animate={{ rotate: 360 }}
               transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
             >
-              <path
-                id="curve"
-                d="M 10,50 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
-                fill="transparent"
-              />
+              <defs>
+                {/* تعريف المسار مرة واحدة ليستخدمه النص */}
+                <path
+                  id="circlePath"
+                  d="M 50, 50 m -40, 0 a 40, 40 0 1, 1 80, 0 a 40, 40 0 1, 1 -80, 0"
+                />
+              </defs>
+
               <text
-                className={`uppercase tracking-[0.3em] fill-[#C4A484] ${isAr ? "text-[14px]" : "text-[8px]"}`}
+                className="fill-[#C4A484]"
+                style={{
+                  fontSize: isAr ? "14.5px" : "14.5px",
+                  fontFamily: "Audiowide",
+                  // letterSpacing: isAr ? "0em" : "0.1em",
+                  fontWeight: "300",
+                  padding: "10px",
+                  // نترك المتصفح يقرر الاتجاه دون تدخل يدوي في الـ unicodeBidi
+                  direction: isAr ? "rtl" : "ltr",
+                }}
               >
-                <textPath
-                  href="#curve"
-                  // في الإنجليزي يبدأ من 0% وفي العربي نجعلها 50% أو قيمة تناسب طول النص
-                  startOffset={isAr ? "100%" : "0%"}
-                  style={{
-                    // التغيير الجوهري هنا: الاتجاه يتغير حسب اللغة
-                    direction: isAr ? "rtl" : "ltr",
-                    unicodeBidi: isAr ? "isolate" : "normal",
-                  }}
-                  // لضمان أن النص العربي يتبع المسار بشكل صحيح
+                <textPath 
+                className="p-2"
+                  href="#circlePath"
+                  startOffset="50%"
+                  textAnchor="middle"
+                  // لضمان ظهور النص العربي من اليمين لليسار على المسار
                   side={isAr ? "right" : "left"}
                 >
                   {t("hero.scroll")}

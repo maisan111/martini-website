@@ -13,7 +13,7 @@
   "hero": {
     "view_project": "Projects",
     "our_services": "Our Services",
-    "scroll": "Scroll Down.Scroll Down.Scroll Down",
+    "scroll": ".Martini Solis. Martini Solis. Martini Solis",
     "projects": [
       {
         "title": "Vision",
@@ -194,7 +194,7 @@
     "subtitle": "What We Offer",
     "title_main": "Excellence",
     "title_accent": "Engineering and Real Estate",
-    "description": "We offer a comprehensive range of architectural and engineering services, combining expertise and innovation."
+    "description": "We offer a comprehensive range of architectural and engineering services, combining professionalism and innovation."
   },
   "items": {
    "design": {

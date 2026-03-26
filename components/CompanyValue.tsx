@@ -44,7 +44,7 @@ const HexagonCard = ({ item, index, isAr }: { item: ValueItem; index: number; is
                     </span>
                     
                     <h3 className={`text-[#4A3F35] font-semibold uppercase mb-5 group-hover:text-[#4A3F35] transition-colors duration-500 
-                        ${isAr ? 'font-Camel tracking-normal text-[24px]' : 'font-Sanseriffic tracking-[0.25em] text-[20px]'}`}>
+                        ${isAr ? 'font-Camel text-[24px]' : 'font-Sanseriffic tracking-[0.25em] text-[20px]'}`}>
                         {item.title}
                     </h3>
                     
@@ -112,7 +112,7 @@ const CompanyValues = () => {
                     
                     <div className={`h-[1px] w-32 bg-gradient-to-r from-transparent via-[#D3B79C]/40 to-transparent mb-8`} />
                     
-                    <p className={`text-[#8C827A] max-w-3xl text-[18px] md:text-[23px] font-light leading-relaxed ${isAr ? 'font-Camel tracking-normal' : 'tracking-widest font-Sanseriffic'}`}>
+                    <p className={`text-[#8C827A] max-w-3xl text-[18px] md:text-[23px] font-light leading-relaxed ${isAr ? 'font-Camel' : 'tracking-widest font-Sanseriffic'}`}>
                         {t('company_values.description')}
                     </p>
                 </div>

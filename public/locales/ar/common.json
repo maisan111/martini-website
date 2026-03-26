@@ -13,7 +13,7 @@
   "hero": {
     "view_project": "المشاريع",
     "our_services": "خدماتنا",
-    "scroll": ". مرر للأسفل    .  مرر للأسفل    . مرر للأسفل     مرر للأسفل",
+    "scroll": ".Martini Solis. Martini Solis. Martini Solis",
     "projects": [
       {
         "title": "الرؤية",
@@ -177,7 +177,7 @@
     "subtitle": "ما نقدمه",
     "title_main": "الهندسي و العقاري",
     "title_accent": "التميز",
-    "description": "نحن نقدم مجموعة شاملة من الخدمات المعمارية والهندسية، نمزج فيها بين الاختراف والابتكار ."
+    "description": "نحن نقدم مجموعة شاملة من الخدمات المعمارية والهندسية، نمزج فيها بين الاحتراف والابتكار ."
   },
   "items": {
    "design": {
@@ -268,7 +268,7 @@
       "description": "صرح من الهندسة الحديثة، يعيد تعريف أفق المدينة بواجهة زجاجية مستدامة وخطوط هندسية نقية.",
       "heroVideo": "/images/ved.mp4",
       "featuredImage": "/images/studio/27.png",
-      "image": "/images/studio/1.png",
+      "image": "/images/studio/1.webp",
       "images": [
         "/images/studio/1.png",
         "/images/studio/2.png",

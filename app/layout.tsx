@@ -2,7 +2,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 export const metadata = {
   title: "MartiniSolis - Real Estate & Architecture",
-  description: "Leading real estate and architectural company",
+  description: "Martini Solis offers the best integrated engineering, architectural, and real estate solutions, including high-quality design, development, and project management.",
 };
 
 

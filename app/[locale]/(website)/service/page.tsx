@@ -67,7 +67,7 @@ export default function ServicesPage() {
           transition={{ duration: 2.5, ease: [0.22, 1, 0.36, 1] }}
         >
           <Image
-            src="/images/architecture.jpg"
+            src="/images/architecture.webp"
             alt="bg"
             fill
             className="object-cover"
@@ -109,7 +109,7 @@ export default function ServicesPage() {
             >
               <span className="w-8 h-px bg-[#DDD3CB]/65 shrink-0" />
               <span
-                className={`text-[#DDD3CB]/70 uppercase ${isAr ? "font-Camel text-[13px] tracking-[0.2em]" : "font-Sanseriffic text-[11px] tracking-[0.6em]"}`}
+                className={`text-[#DDD3CB]/70 uppercase ${isAr ? "font-Camel text-[13px]" : "font-Sanseriffic text-[11px] tracking-[0.6em]"}`}
               >
                 {t("services_page_header.subtitle")}
               </span>
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                 }}
                 className={`leading-[0.95] text-white ${
                   isAr
-                    ? "font-Camel text-[50px] lg:text-[105px] tracking-normal"
+                    ? "font-Camel text-[50px] lg:text-[105px]"
                     : "font-Sanseriffic text-[50px] lg:text-[85px] tracking-widest"
                 }`}
               >
@@ -149,7 +149,7 @@ export default function ServicesPage() {
               <p
                 className={`text-[#DDD3CB]/95 font-light leading-relaxed max-w-lg ${
                   isAr
-                    ? "font-Camel text-[24px] lg:text-[28px] tracking-normal"
+                    ? "font-Camel text-[24px] lg:text-[28px]"
                     : "font-Sanseriffic text-[20px] tracking-widest"
                 }`}
               >
@@ -256,7 +256,7 @@ export default function ServicesPage() {
                             key={feat}
                             className={`text-[13px] uppercase text-[#231A15]/40 border border-[#231A15]/20 px-3 py-1 ${
                               isAr
-                                ? "font-Camel tracking-[0.1em]"
+                                ? "font-Camel"
                                 : "font-Sanseriffic tracking-widest"
                             }`}
                           >
@@ -334,7 +334,7 @@ export default function ServicesPage() {
                                 }}
                                 className={`flex items-center gap-4 uppercase text-[#231A15]/60 ${
                                   isAr
-                                    ? "font-Camel text-[16px] tracking-[0.1em]"
+                                    ? "font-Camel text-[16px]"
                                     : "font-Sanseriffic text-[16px] tracking-widest"
                                 }`}
                               >
@@ -379,7 +379,7 @@ export default function ServicesPage() {
                 className={`absolute -inset-4 border border-[#DDD3CB]/20 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-700 ${isAr ? "-translate-x-4" : "translate-x-4"}`}
               ></div>
               <Image
-                src="/images/living-room.jpg"
+                src="/images/living-room.webp"
                 alt="Process"
                 fill
                 className="object-cover grayscale contrast-125 opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000"
@@ -392,7 +392,7 @@ export default function ServicesPage() {
               transition={{ duration: 1 }}
             >
               <h2
-                className={`text-[52px] font-bold mb-12 text-[#FFFFFF] ${isAr ? "font-Camel tracking-normal" : "font-Sanseriffic tracking-widest"}`}
+                className={`text-[52px] font-bold mb-12 text-[#FFFFFF] ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
               >
                 {t("methodology.title")}{" "}
                 <span className="text-[#DDD3CB] font-light ">
@@ -400,16 +400,16 @@ export default function ServicesPage() {
                 </span>
               </h2>
               <div
-                className={`space-y-12 ${isAr ? "font-Camel tracking-normal" : "font-Sanseriffic tracking-widest"}`}
+                className={`space-y-12 ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
               >
                 {(t("methodology.steps", { returnObjects: true }) as any[]).map(
                   (step, i) => (
                     <div key={i} className="group flex gap-8">
                       <div
-                        className={`relative ${isAr ? "font-Camel tracking-normal" : "font-Sanseriffic tracking-widest"}`}
+                        className={`relative ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
                       >
                         <span
-                          className={`text-[#F2F2F2] font-light text-4xl opacity-20 group-hover:opacity-100 group-hover:text-[#e2dedb] transition-all ${isAr ? "font-Camel tracking-normal" : "font-Sanseriffic tracking-widest"}`}
+                          className={`text-[#F2F2F2] font-light text-4xl opacity-20 group-hover:opacity-100 group-hover:text-[#e2dedb] transition-all ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
                         >
                           0{i + 1}
                         </span>
@@ -417,12 +417,12 @@ export default function ServicesPage() {
                       </div>
                       <div className="pt-2">
                         <h4
-                          className={` font-bold mb-3 text-[#FFFFFF] ${isAr ? "font-Camel tracking-normal text-[24px]" : "font-Sanseriffic tracking-widest text-xl"}`}
+                          className={` font-bold mb-3 text-[#FFFFFF] ${isAr ? "font-Camel text-[24px]" : "font-Sanseriffic tracking-widest text-xl"}`}
                         >
                           {step.t}
                         </h4>
                         <p
-                          className={`text-[#CCCBD0]  font-light leading-relaxed max-w-sm ${isAr ? "text-[20px] font-Camel tracking-normal" : "text-[16px] font-Sanseriffic tracking-widest"}`}
+                          className={`text-[#CCCBD0]  font-light leading-relaxed max-w-sm ${isAr ? "text-[20px] font-Camel" : "text-[16px] font-Sanseriffic tracking-widest"}`}
                         >
                           {step.d}
                         </p>
@@ -445,7 +445,7 @@ export default function ServicesPage() {
             className="max-w-3xl mx-auto"
           >
             <h3
-              className={`text-4xl md:text-6xl font-bold mb-12 text-[#231A15]/70 ${isAr ? "font-Camel tracking-widest" : "font-Sanseriffic tracking-widest"}`}
+              className={`text-4xl md:text-6xl font-bold mb-12 text-[#231A15]/70 ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
             >
               {t("cta.title")}
             </h3>
@@ -454,7 +454,7 @@ export default function ServicesPage() {
              href="tel:+963950505058" // ضع رقم الموبايل هنا مع رمز الدولة
               className={`group relative inline-block overflow-hidden px-12 py-4 bg-[#231A15]/80 text-[#F7F4F1] font-bold uppercase text-[15px] transition-all duration-500 shadow-[0_20px_40px_rgba(242,242,242,0.1)] hover:px-[60px] text-center ${
                 isAr
-                  ? "font-Camel tracking-[0.5em]"
+                  ? "font-Camel"
                   : "font-Sanseriffic tracking-[0.3em]"
               }`}
             >
@@ -466,7 +466,7 @@ export default function ServicesPage() {
           </motion.div>
         </div>
 
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[12vw] font-bold text-[#8C827A]/15 tracking-widest whitespace-nowrap leading-none select-none uppercase">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[12vw] font-bold text-[#8C827A]/15  whitespace-nowrap leading-none select-none">
           {t("cta.name")}
         </div>
       </section>

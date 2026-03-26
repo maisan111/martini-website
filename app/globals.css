@@ -4,3 +4,10 @@
 
 
 
+@layer base {
+  html:lang(ar) {
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+}

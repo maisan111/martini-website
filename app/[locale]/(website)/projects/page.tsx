@@ -35,7 +35,7 @@ export default function PortfolioPage() {
           transition={{ duration: 2.5, ease: [0.22, 1, 0.36, 1] }}
         >
           <Image
-            src="/images/studio/4.png"
+            src="/images/studio/4.webp"
             alt="Portfolio Background"
             fill
             className="object-cover"
@@ -75,7 +75,7 @@ export default function PortfolioPage() {
               <span
                 className={`text-[#DDD3CB]/70 uppercase ${
                   isAr
-                    ? "font-Camel text-[13px] tracking-[0.2em]"
+                    ? "font-Camel text-[13px]"
                     : "font-Sanseriffic text-[12px] tracking-[0.6em]"
                 }`}
               >
@@ -94,7 +94,7 @@ export default function PortfolioPage() {
                 }}
                 className={`leading-[0.95] text-white ${
                   isAr
-                    ? "font-Camel text-[50px] lg:text-[105px] tracking-normal"
+                    ? "font-Camel text-[50px] lg:text-[105px]"
                     : "font-Sanseriffic text-[50px] lg:text-[85px] tracking-widest"
                 }`}
               >
@@ -115,7 +115,7 @@ export default function PortfolioPage() {
               <p
                 className={`text-[#DDD3CB]/95 font-light leading-relaxed max-w-lg ${
                   isAr
-                    ? "font-Camel text-[24px] tracking-normal"
+                    ? "font-Camel text-[24px]"
                     : "font-Sanseriffic text-[22px] tracking-widest"
                 }`}
               >
@@ -173,7 +173,7 @@ export default function PortfolioPage() {
             <span
               className={`text-[#231A15]/50 uppercase ${
                 isAr
-                  ? "font-Camel text-[14px] tracking-[0.2em]"
+                  ? "font-Camel text-[14px]"
                   : "font-Sanseriffic text-[12px] tracking-[0.6em]"
               }`}
             >
@@ -194,7 +194,7 @@ export default function PortfolioPage() {
                   transition={{ duration: 0.5, delay: i * 0.07 }}
                   className={`relative px-6 py-2.5 uppercase text-[14px] border transition-all duration-400 ${
                     isAr
-                      ? "font-Camel tracking-[0.15em]"
+                      ? "font-Camel"
                       : "font-Sanseriffic tracking-widest"
                   } ${
                     isActive
@@ -245,7 +245,7 @@ export default function PortfolioPage() {
                           src={project.image}
                           alt={project.title}
                           fill
-                          className="object-cover group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000"
+                          className="object-cover  group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000"
                         />
                       </motion.div>
 
@@ -257,7 +257,7 @@ export default function PortfolioPage() {
                         <span
                           className={`text-[11px] uppercase bg-[#E9DED9]/85 text-[#231A15]/60 px-3 py-1 ${
                             isAr
-                              ? "font-Camel tracking-[0.1em]"
+                              ? "font-Camel"
                               : "font-Sanseriffic tracking-widest"
                           }`}
                         >
@@ -289,7 +289,7 @@ export default function PortfolioPage() {
                         <h3
                           className={`text-[#231A15] truncate group-hover:text-[#775F4B] transition-colors duration-500 ${
                             isAr
-                              ? "font-Camel text-[22px] tracking-normal"
+                              ? "font-Camel text-[22px]"
                               : "font-Sanseriffic text-[18px] tracking-widest"
                           }`}
                         >
@@ -306,7 +306,7 @@ export default function PortfolioPage() {
                         <span
                           className={`shrink-0 text-[12px] text-[#231A15]/30 uppercase border border-[#231A15]/15 px-2.5 py-1 ${
                             isAr
-                              ? "font-Camel tracking-[0.1em]"
+                              ? "font-Camel"
                               : "font-Sanseriffic tracking-widest"
                           }`}
                         >

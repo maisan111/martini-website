@@ -25,14 +25,14 @@ export default function AboutPage() {
     return (
         <main 
             dir={isAr ? "rtl" : "ltr"} 
-            className={`bg-[#DDD3CB] min-h-screen text-white ${isAr ? "font-sans-arabic" : "font-Sanseriffic"}`}
+            className={`bg-[#DDD3CB] min-h-screen text-white ${isAr ? "font-Camel" : "font-Sanseriffic"}`}
         >
             {/* 1. Hero Section */}
             <div className="relative min-h-screen w-full flex flex-col overflow-hidden">
                 {/* Background Media */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/abouthero.jpg"
+                        src="/images/abouthero.webp"
                         alt="About Us"
                         fill
                         className="object-cover grayscale-[40%]"
@@ -63,7 +63,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* Mission & Vision Grid */}
-                    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl  ${isAr ? "font-Camel pr-10" : "font-Sanseriffic tracking-widest"}`}>
+                    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl  ${isAr ? "font-Camel px-2" : "font-Sanseriffic tracking-widest"}`}>
                         {missionVisionData.map((box, i) => (
                             <div key={i} className="bg-[#9F8C84]/30 backdrop-blur-md p-8 md:p-10 border border-[#94734a]/20 hover:border-[#cfb186]/40 transition-colors duration-500">
                                 <h2 className={`text-white text-[25px] font-extrabold mb-4 uppercase ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}>

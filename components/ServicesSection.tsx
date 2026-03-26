@@ -35,7 +35,7 @@ const ServiceCard = ({ id, title, description, isAr }) => {
 
         {/* Index and Icon (Original Layout) */}
         <div className={`flex justify-between items-start mb-6 w-full ${isAr ? 'flex-row-reverse' : 'flex-row'}`}>
-          <span className={`text-[13px] font-medium text-[#8C827A] uppercase ${isAr ? 'tracking-normal font-Camel' : 'tracking-[0.3em] font-Sanseriffic'}`}>
+          <span className={`text-[13px] font-medium text-[#8C827A] uppercase ${isAr ? 'font-Camel' : 'tracking-[0.3em] font-Sanseriffic'}`}>
             {isAr ? `الخدمة ${id}` : `Service ${id}`}
           </span>
           <motion.div 
@@ -78,7 +78,7 @@ export default function ServicesSection() {
     >
 
       <div className="absolute inset-0 opacity-[0.04] bg-center bg-cover bg-no-repeat" 
-     style={{ backgroundImage: "url('/images/back.jpg')" }}
+     style={{ backgroundImage: "url('/images/back.webp')" }}
       
       />
 
@@ -91,7 +91,7 @@ export default function ServicesSection() {
             <motion.span 
               initial={{ opacity: 0, x: isAr ? 20 : -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className={`inline-block text-[#8C827A] text-md font-bold uppercase mb-6 ${isAr ? 'tracking-normal font-Camel' : 'tracking-[0.5em] font-Sanseriffic'}`}
+              className={`inline-block text-[#8C827A] text-md font-bold uppercase mb-6 ${isAr ? 'font-Camel' : 'tracking-[0.5em] font-Sanseriffic'}`}
             >
               {t('services.badge')}
             </motion.span>

@@ -69,7 +69,7 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className={`text-white/50 text-[20px] leading-relaxed max-w-xl font-light pt-5 ${isAr ? "tracking-wide font-Camel" : "font-Sanseriffic tracking-widest"}`}
+                className={`text-white/50 text-[20px] leading-relaxed max-w-xl font-light pt-5 ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
               >
                 {t("footer.description")}
               </motion.p>
@@ -104,7 +104,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/5 py-8">
-          <p className={`text-[12px] text-white/30 uppercase text-center font-light ${isAr ? "tracking-normal font-Camel" : "tracking-[0.3em] font-Sanseriffic"}`}>
+          <p className={`text-[12px] text-white/30 uppercase text-center font-light ${isAr ? "font-Camel" : "tracking-[0.3em] font-Sanseriffic"}`}>
             {t("footer.rights", { year: 2025 })}
           </p>
     

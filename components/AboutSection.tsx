@@ -34,7 +34,7 @@ export default function AboutSection() {
                     > 
                         <div className="relative z-10 h-[320px] sm:h-[420px] md:h-[500px] lg:h-[520px] w-full bg-gradient-to-br from-[#1e2c2b] to-[#16201f] border border-[#94734a]/20 shadow-2xl overflow-hidden"> 
                             <Image 
-                                src="/images/t-8.jpg" 
+                                src="/images/t-8.webp" 
                                 alt="About Martini Solis" 
                                 fill 
                                 className="object-cover opacity-90 hover:scale-105 transition-transform duration-[3s]" 
@@ -64,7 +64,7 @@ export default function AboutSection() {
                             transition={{ duration: 0.6, delay: 0.2 }} 
                             viewport={{ once: false }} 
                         > 
-                            <span className={`block text-[#273f3f] text-[17px] font-bold mb-4 ${isAr ? 'tracking-normal font-Camel' : 'tracking-[0.4em] uppercase font-Sanseriffic'}`}> 
+                            <span className={`block text-[#273f3f] text-[17px] font-bold mb-4 ${isAr ? 'font-Camel' : 'tracking-[0.4em] uppercase font-Sanseriffic'}`}> 
                                 {t('about.who_we_are')} 
                             </span> 
                             <h3 className={`text-[#231A15]/60 mb-8 leading-tight ${isAr ? 'text-4xl md:text-5xl font-black font-Camel' : 'text-4xl md:text-[45px] font-bold tracking-widest font-Sanseriffic '}`}> 
@@ -79,7 +79,7 @@ export default function AboutSection() {
                             whileInView={{ opacity: 1, y: 0 }} 
                             transition={{ duration: 0.6, delay: 0.4 }} 
                             viewport={{ once: false }} 
-                            className={`text-[#353535] mb-10 ${isAr ? 'text-[22px] tracking-normal leading-loose font-Camel' : 'text-[20px] leading-relaxed font-light tracking-widest font-Sanseriffic'}`} 
+                            className={`text-[#353535] mb-10 ${isAr ? 'text-[22px] leading-loose font-Camel' : 'text-[20px] leading-relaxed font-light tracking-widest font-Sanseriffic'}`} 
                         > 
                             {t('about.description')} 
                         </motion.p> 
@@ -95,7 +95,7 @@ export default function AboutSection() {
                                     viewport={{ once: true }} 
                                 > 
                                     <CheckCircleIcon className="w-5 h-5 text-[#4A6D6F] flex-shrink-0" /> 
-                                    <span className={`text-[#1a1a1a] font-medium text-[18px] ${isAr ? 'tracking-normal font-Camel' : 'tracking-widest uppercase font-Sanseriffic'}`}> 
+                                    <span className={`text-[#1a1a1a] font-medium text-[18px] ${isAr ? 'font-Camel' : 'tracking-widest uppercase font-Sanseriffic'}`}> 
                                         {feature} 
                                     </span> 
                                 </motion.div> 

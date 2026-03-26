@@ -17,7 +17,6 @@ module.exports = {
         Sanseriffic: ['var(--font-Sanseriffic)'],
         //arabic fonts
         OMAR: ['var(--font-OMAR)'],
-        MyLotusB: ['var(--font-MyLotusB)'],
         Alharoni: ['var(--font-Alharoni)'],
         mohb: ['var(--font-mohb)'],
         Camel: ['var(--font-Camel)'],

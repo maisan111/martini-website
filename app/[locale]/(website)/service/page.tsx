@@ -451,24 +451,29 @@ export default function ServicesPage() {
             </h3>
 
             <a
-             href="tel:+963950505058" // ضع رقم الموبايل هنا مع رمز الدولة
+              href="tel:+963950505058" // ضع رقم الموبايل هنا مع رمز الدولة
               className={`group relative inline-block overflow-hidden px-12 py-4 bg-[#231A15]/80 text-[#F7F4F1] font-bold uppercase text-[15px] transition-all duration-500 shadow-[0_20px_40px_rgba(242,242,242,0.1)] hover:px-[60px] text-center ${
-                isAr
-                  ? "font-Camel"
-                  : "font-Sanseriffic tracking-[0.3em]"
+                isAr ? "font-Camel" : "font-Sanseriffic tracking-[0.3em]"
               }`}
             >
               <span className="relative z-10">{t("cta.button")}</span>
 
               {/* تأثير الخلفية عند الحوم (اختياري) */}
-              
             </a>
           </motion.div>
         </div>
 
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[12vw] font-bold text-[#8C827A]/15  whitespace-nowrap leading-none select-none">
-          {t("cta.name")}
-        </div>
+        <h2 className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[12vw] font-bold text-[#8C827A]/15 tracking-wide font-computerist whitespace-nowrap leading-none select-none">
+          {/* {t("cta.name")} */}
+          Martini{" "}
+          <span className="text-[10vw]">
+            S
+            <span className="font-Hind_Guntur text-[60px] md:text-[12vw]">
+              o
+            </span>
+            lis
+          </span>
+        </h2>
       </section>
     </main>
   );

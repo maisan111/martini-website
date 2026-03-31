@@ -10,10 +10,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@nivo/bar": "^0.99.0",
-    "@nivo/core": "^0.99.0",
-    "@nivo/line": "^0.99.0",
-    "@nivo/pie": "^0.99.0",
     "framer-motion": "^12.27.5",
     "gsap": "^3.14.2",
     "i18next": "^25.8.7",
@@ -24,7 +20,6 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-i18next": "^16.5.4",
-    "recharts": "^3.7.0",
     "swiper": "^12.0.3"
   },
   "devDependencies": {

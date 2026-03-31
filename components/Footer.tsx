@@ -1,6 +1,3 @@
-
-
-
 // "use client";
 
 // import React from "react";
@@ -23,16 +20,15 @@
 //   ];
 
 //   return (
-//     <footer 
-//       dir={isAr ? "rtl" : "ltr"} 
+//     <footer
+//       dir={isAr ? "rtl" : "ltr"}
 //       className="relative z-20 bg-[#231A15] text-white overflow-hidden"
 //     >
 
-//    <div className="absolute inset-0 opacity-[0.08] bg-center bg-repeat pointer-events-none" 
+//    <div className="absolute inset-0 opacity-[0.08] bg-center bg-repeat pointer-events-none"
 //      style={{ backgroundImage: "url('/images/logo33.png')", backgroundSize: '450px' }} // جرب تحديد حجم صغير للباترن
 // />
-      
-      
+
 //       <div className="container mx-auto px-7 lg:px-8 relative">
 //         <div className="py-14 lg:py-16">
 //           <div className="grid grid-cols-1 place-items-center gap-16 lg:gap-8 text-center">
@@ -103,14 +99,12 @@
 //           <p className={`text-[12px] text-white/30 uppercase text-center font-light ${isAr ? "font-Camel" : "tracking-[0.3em] font-Sanseriffic"}`}>
 //             {t("footer.rights", { year: 2025 })}
 //           </p>
-    
+
 //         </div>
 //       </div>
 //     </footer>
 //   );
 // }
-
-
 
 "use client";
 
@@ -128,14 +122,27 @@ export default function Footer() {
   const isAr = i18n.language === "ar";
 
   const socialLinks = [
-    { icon: Linkedin, href: "https://www.linkedin.com/in/martinisolis", label: "LinkedIn" },
-    { icon: Instagram, href: "https://www.instagram.com/martinisolis", label: "Instagram" },
-    { icon: Facebook, href: "https://www.facebook.com/martinisolis", label: "Facebook" },
-    { icon: Twitter, href: "https://www.twitter.com/martinisolis", label: "Twitter" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/martinisolis",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/martinisolis",
+      label: "Instagram",
+    },
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/martinisolis",
+      label: "Facebook",
+    },
+    {
+      icon: Twitter,
+      href: "https://www.twitter.com/martinisolis",
+      label: "Twitter",
+    },
   ];
-
-
-
 
   const videoRef = useRef(null);
 
@@ -143,19 +150,17 @@ export default function Footer() {
     if (videoRef.current) {
       // القيمة 0.5 تعني نصف السرعة الأصلية (أبطأ)
       // جرب 0.3 إذا أردت وميضاً هادئاً جداً
-      videoRef.current.playbackRate = 0.6; 
+      videoRef.current.playbackRate = 0.6;
     }
   }, []);
 
-
-
   return (
-    <footer 
-      dir={isAr ? "rtl" : "ltr"} 
+    <footer
+      dir={isAr ? "rtl" : "ltr"}
       className="relative z-20 bg-[#231A15] text-white overflow-hidden"
     >
       {/* --- استبدال صورة الباكغراوند بالفيديو هنا --- */}
-      <motion.div 
+      {/* <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.2 }} // درجة الشفافية النهائية التي تريدها
       transition={{ duration: 2 }} // يجعل الفيديو يظهر بنعومة خلال ثانيتين عند فتح الصفحة
@@ -171,13 +176,18 @@ export default function Footer() {
       >
         <source src="/images/f.mp4" type="video/mp4" />
       </video>
-    </motion.div>
-      {/* ------------------------------------------- */}
-      
-      <div className="container mx-auto px-7 lg:px-8 relative">
-        <div className="py-14 lg:py-16">
-          <div className="grid grid-cols-1 place-items-center gap-16 lg:gap-8 text-center">
+    </motion.div> */}
 
+      <div
+        className="absolute inset-0 opacity-10  bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: "url('/images/footer.jpg')" }} // جرب تحديد حجم صغير للباترن
+      />
+
+      {/* ------------------------------------------- */}
+
+      <div className="container mx-auto px-7 lg:px-8 relative">
+        <div className="py-12">
+          <div className="grid grid-cols-1 place-items-center gap-16 lg:gap-8 text-center pt-12">
             {/* Brand Section */}
             <div className="space-y-8">
               <motion.div
@@ -185,7 +195,7 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="w-fit mx-auto py-3"
+                className="w-fit mx-auto py-5"
               >
                 <Link href="/">
                   <div className="w-fit h-12 md:h-[115px] flex items-center justify-center mx-auto pt-3">
@@ -206,7 +216,7 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className={`text-white/50 text-[20px] leading-relaxed max-w-xl font-light pt-5 ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
+                className={`text-white/70 text-[20px] leading-relaxed max-w-2xl font-light pt-5 ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
               >
                 {t("footer.description")}
               </motion.p>
@@ -228,8 +238,8 @@ export default function Footer() {
                     className="group relative"
                   >
                     <div className="absolute inset-0 bg-[#cfdddd]/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 blur-xl" />
-                    <div className="relative w-12 h-12 border border-white/20 rounded-full flex items-center justify-center group-hover:border-[#D8D7DC] group-hover:bg-[#D8D7DC]/10 transition-all duration-300">
-                      <social.icon className="w-[18px] h-[18px] text-white/50 group-hover:text-[#D8D7DC] transition-colors duration-300" />
+                    <div className="relative w-12 h-12 border border-white/30 rounded-full flex items-center justify-center group-hover:border-[#D8D7DC] group-hover:bg-[#D8D7DC]/10 transition-all duration-300">
+                      <social.icon className="w-[18px] h-[18px] text-white/60 group-hover:text-[#D8D7DC] transition-colors duration-300" />
                     </div>
                   </motion.a>
                 ))}
@@ -239,8 +249,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/5 py-8">
-          <p className={`text-[12px] text-white/30 uppercase text-center font-light ${isAr ? "font-Camel" : "tracking-[0.3em] font-Sanseriffic"}`}>
+        <div className="border-t border-white/15 py-8">
+          <p
+            className={`text-[12px] text-white/50 uppercase text-center font-light ${isAr ? "font-Camel" : "tracking-[0.3em] font-Sanseriffic"}`}
+          >
             {t("footer.rights", { year: 2026 })}
           </p>
         </div>

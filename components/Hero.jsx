@@ -356,22 +356,55 @@ export default function LuxuryHero() {
                       initial={{ opacity: 0 }}
                       animate={isActive ? { opacity: 1 } : { opacity: 0 }}
                       transition={{ duration: 1, delay: 0.65 }}
-                      className=" pb-7 mb-14   sm:mb-10 sm:pb-1"
+                      className=""
                     >
                       <p
                         className={`max-w-5xl text-white/90 ${
                           isAr
-                            ? "text-[24px] font-Camel"
-                            : "text-[17px] leading-loose tracking-widest font-light"
+                            ? "text-[24px] md:text-[25px]  font-Camel"
+                            : "text-[17px] md:text-[19px] leading-loose tracking-widest font-light"
                         }`}
                       >
                         {project.subtitle}
                       </p>
                     </motion.div>
-                    <div className="flex justify-around">
-                      <Link className="text-[20px] py-1 font-Sanseriffic text-[#9D8A82]  tracking-widest bg-white border-none outline-none px-8 mr-5 backdrop-blur-sm " href="/projects">Project</Link>
-                      <Link className="text-[20px] py-1 font-Sanseriffic text-[#9D8A82]  tracking-widest bg-white border-none outline-none px-8  backdrop-blur-sm " href="/service">Services</Link>
-                    </div>
+                    {/* منطقة الأزرار المحدثة */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={
+                        isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                      }
+                      transition={{ duration: 0.8, delay: 0.8 }}
+                      className={`flex flex-wrap gap-2 md:gap-4 mt-10 ${isAr ? "justify-start" : "justify-start"}`}
+                    >
+                      {/* زر المشاريع - تصميم صلب وفخم */}
+                      <Link
+                        href="/projects"
+                        className="group relative overflow-hidden bg-white px-8 md:px-10 py-2 transition-all duration-300"
+                      >
+                        <span
+                          className={`relative z-10 text-[16px] md:text-[18px] font-medium tracking-widest text-[#9D8A82] transition-colors duration-300 group-hover:text-white ${isAr ? "font-Camel" : "font-Sanseriffic"}`}
+                        >
+                          {isAr ? "المشاريع" : "Projects"}
+                        </span>
+                        {/* تأثير الخلفية عند الـ Hover */}
+                        <div className="absolute inset-0 z-0 translate-y-full bg-[#9D8A82] transition-transform duration-300 ease-out group-hover:translate-y-0" />
+                      </Link>
+
+                      {/* زر الخدمات - تصميم شفاف (Ghost Button) لإحداث توازن بصري */}
+                      <Link
+                        href="/service"
+                        className="group relative overflow-hidden border border-white/50 bg-white/10 px-8 md:px-10 py-2 backdrop-blur-md transition-all duration-300 hover:border-white"
+                      >
+                        <span
+                          className={`relative z-10 text-[16px] md:text-[18px] font-medium tracking-widest text-white transition-colors duration-300 ${isAr ? "font-Camel" : "font-Sanseriffic"}`}
+                        >
+                          {isAr ? "الخدمات" : "Services"}
+                        </span>
+                        {/* تأثير ضوئي عند الـ Hover */}
+                        <div className="absolute inset-0 z-0 -translate-x-full bg-white/20 transition-transform duration-300 ease-out group-hover:translate-x-0" />
+                      </Link>
+                    </motion.div>
                   </div>
                 </div>
               </SwiperSlide>

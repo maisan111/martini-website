@@ -179,7 +179,7 @@ export default function Footer() {
     </motion.div> */}
 
       <div
-        className="absolute inset-0 opacity-10  bg-cover bg-center bg-no-repeat pointer-events-none"
+        className="absolute inset-0 opacity-15  bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: "url('/images/footer.jpg')" }} // جرب تحديد حجم صغير للباترن
       />
 
@@ -216,7 +216,7 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className={`text-white/70 text-[20px] leading-relaxed max-w-2xl font-light pt-5 ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
+                className={`text-white/75 text-[21px] leading-relaxed max-w-2xl font-light pt-5 ${isAr ? "font-Camel" : "font-Sanseriffic tracking-widest"}`}
               >
                 {t("footer.description")}
               </motion.p>
@@ -239,7 +239,7 @@ export default function Footer() {
                   >
                     <div className="absolute inset-0 bg-[#cfdddd]/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 blur-xl" />
                     <div className="relative w-12 h-12 border border-white/30 rounded-full flex items-center justify-center group-hover:border-[#D8D7DC] group-hover:bg-[#D8D7DC]/10 transition-all duration-300">
-                      <social.icon className="w-[18px] h-[18px] text-white/60 group-hover:text-[#D8D7DC] transition-colors duration-300" />
+                      <social.icon className="w-[18px] h-[18px] text-white/65 group-hover:text-[#D8D7DC] transition-colors duration-300" />
                     </div>
                   </motion.a>
                 ))}
@@ -251,7 +251,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/15 py-8">
           <p
-            className={`text-[12px] text-white/50 uppercase text-center font-light ${isAr ? "font-Camel" : "tracking-[0.3em] font-Sanseriffic"}`}
+            className={`text-[12px] text-white/60 uppercase text-center font-light ${isAr ? "font-Camel" : "tracking-[0.3em] font-Sanseriffic"}`}
           >
             {t("footer.rights", { year: 2026 })}
           </p>
